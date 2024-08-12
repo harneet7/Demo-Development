@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background: #fff;
+                border-radius: 8px;
+            }
+            h2 {
+                text-align: center;
+                color: #333;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                margin-top: 10px;
+            }
+            input[type="text"] {
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            input[type="password"] {
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                margin-top: 20px;
+                border: none;
+                border-radius: 4px;
+                background-color: #5cb85c;
+                color: white;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #4cae4c;
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form method="POST" action="/login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="password">Role:</label>
+            <input type="text" id="role" name="role" required text="'tester">            
+            <br>
+            <input type="submit" value = "Submit">
+        </form>
+    </div>  
+</body>
+</html>
